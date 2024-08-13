@@ -50,10 +50,10 @@ class HomeScreen extends StatelessWidget {
                     const DisplayListTask(
                       tasks: [
                         Task(
-                          title: 'title 1', 
+                          title: 'Hospital', 
                           date: 'Aug 13,2024', 
                           isCompleted: false, 
-                          note: 'note', 
+                          note: '', 
                           time: '10:12',
                           category: TasksCategories.shopping
                           ),
