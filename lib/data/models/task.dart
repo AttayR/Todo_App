@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:todo_app/utils/tasks_categories.dart';
 
 class Task extends Equatable {
   final int? id;
@@ -7,6 +8,7 @@ class Task extends Equatable {
   final String time;
   final String date;
   final bool isCompleted;
+  final TasksCategories category;
 
   const Task({
     this.id,
@@ -15,6 +17,7 @@ class Task extends Equatable {
     required this.isCompleted,
     required this.note,
     required this.time,
+    required this.category
   });
   @override
   List<Object> get props {
@@ -41,7 +44,9 @@ class Task extends Equatable {
       note: note ?? this.note,
       time: time ?? this.time,
       date: date ?? this.date,
-      isCompleted: isCompleted ?? this.isCompleted,
+      isCompleted: isCompleted ?? this.isCompleted, 
+      category: category,
+
     );
   }
 }
