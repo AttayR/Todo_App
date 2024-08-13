@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:todo_app/data/data.dart';
 import 'package:todo_app/utils/utils.dart';
 import 'package:todo_app/widgets/widgets.dart';
 
@@ -47,7 +48,24 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     const DisplayListTask(
-                      tasks: [], 
+                      tasks: [
+                        Task(
+                          title: 'title 1', 
+                          date: 'Aug 13,2024', 
+                          isCompleted: false, 
+                          note: 'note', 
+                          time: '10:12',
+                          category: TasksCategories.shopping
+                          ),
+                          Task(
+                          title: 'going to office', 
+                          date: 'Aug 13,2024', 
+                          isCompleted: false, 
+                          note: 'note', 
+                          time: '10:12',
+                          category: TasksCategories.education
+                          ),
+                          ], 
                       ),
                     
                     const Gap(20),
@@ -56,7 +74,24 @@ class HomeScreen extends StatelessWidget {
                       style: context.textTheme.headlineMedium,
                     ),
                    const DisplayListTask(
-                      tasks: [], 
+                      tasks: [
+                        Task(
+                          title: 'title 1', 
+                          date: 'Aug 13,2024', 
+                          isCompleted: true, 
+                          note: 'note', 
+                          time: '10:12',
+                          category: TasksCategories.personal
+                          ),
+                          Task(
+                          title: 'going to office', 
+                          date: 'Aug 13,2024', 
+                          isCompleted: true, 
+                          note: 'note', 
+                          time: '10:12',
+                          category: TasksCategories.work
+                          ),
+                      ], 
                       isCompletedTasks: true,
                       ),
                     const Gap(20),
