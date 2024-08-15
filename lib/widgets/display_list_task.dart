@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/data/data.dart';
 import 'package:todo_app/utils/utils.dart';
+import 'package:todo_app/widgets/task_details.dart';
 import 'package:todo_app/widgets/widgets.dart';
 
 class DisplayListTask extends StatelessWidget {

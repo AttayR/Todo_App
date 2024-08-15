@@ -72,7 +72,7 @@ class TaskDetails extends StatelessWidget {
             ),
           ),
       ],
-      ),
+      ),  
     );
   }
 }

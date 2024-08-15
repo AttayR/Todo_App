@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:todo_app/data/data.dart';
 import 'package:todo_app/utils/extensions.dart';
-import 'package:todo_app/widgets/widgets.dart';
+import 'package:todo_app/widgets/circle_container.dart';
 
 class TaskTile extends StatelessWidget {
   const TaskTile({super.key, required this.task, this.onCompleted});
